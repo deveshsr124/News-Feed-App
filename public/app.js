@@ -8,9 +8,9 @@ const button=document.querySelector('.submit-btn');
       const proxy=`https://mycors-proxy-devesh.herokuapp.com/`;
      const url=`${proxy}https://newsapi.org/v2/everything?q=${inputValue.value}&apiKey=87e9c8df9ef34834ad3c4a0b57f743ed`;
      fetch(url,{
-        method:'POST',
+        method:'GET',
           headers:h,
-          mode:"cors"
+          mode:"no-cors"
      }).then(res=>{
         return res.json();
      }).then(data=>{
