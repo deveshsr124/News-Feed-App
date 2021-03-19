@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&display=swap&family=Oxygen&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+h1 {
+	color: rgb(139, 221, 241);
+	margin-left: 43%;
+	margin-bottom: 5%;
+	letter-spacing: 2px;
+	font-size: 3rem;
+	font-family: "Bangers", cursive;
+}
+
+#news-search {
+	margin-left: 38%;
+	font-size: 1.3rem;
+	color: white;
+	margin-bottom: 40px;
+	padding: 4px 7px 4px 7px;
+}
+
+.submit-btn {
+	font-size: 1.3rem;
+	color: white;
+	border-radius: 8px 8px;
+	padding: 4px 7px 4px 7px;
+}
+
+.submit-btn:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+.feed-container {
+	height: 400px;
+	width: 450px;
+	border: 1px solid white;
+	margin-bottom: 50px;
+	margin-left: 33%;
+}
+
+.feed-img {
+	width: 448px;
+	height: 200px;
+	object-fit: fill;
+}
+
+.feed-details {
+	margin-top: 30px;
+	font-family: "Oxygen", sans-serif;
+	width: 440px;
+	color: white;
+	display: inline-block;
+}
+
+a {
+	color: rgb(139, 221, 241);
+	text-decoration: none;
+	font-family: "Oxygen", sans-serif;
+}
