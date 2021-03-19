@@ -3,12 +3,9 @@ const inputValue = document.getElementById('news-search');
 const button=document.querySelector('.submit-btn');
 
   button.addEventListener("click",function getFeed(){
-     
       const proxy=`https://mycors-proxy-devesh.herokuapp.com/`;
      const url=`${proxy}https://newsapi.org/v2/everything?q=${inputValue.value}&apiKey=87e9c8df9ef34834ad3c4a0b57f743ed`;
-     fetch(url,{
-          mode:"no-cors"
-     }).then(res=>{
+     fetch(url).then(res=>{
         return res.json();
      }).then(data=>{
           showFeed(data);
