@@ -3,9 +3,12 @@ const inputValue = document.getElementById('news-search');
 const button=document.querySelector('.submit-btn');
 
   button.addEventListener("click",function getFeed(){
+     let h=new Headers();
       const proxy=`https://mycors-proxy-devesh.herokuapp.com/`;
-     const api=`${proxy}https://newsapi.org/v2/everything?q=${inputValue.value}&apiKey=87e9c8df9ef34834ad3c4a0b57f743ed`;
-     fetch(api).then(res=>{
+     const url=`${proxy}https://newsapi.org/v2/everything?q=${inputValue.value}&apiKey=87e9c8df9ef34834ad3c4a0b57f743ed`;
+     fetch(url,{
+          headers:h
+     }).then(res=>{
         return res.json();
      }).then(data=>{
           showFeed(data);
